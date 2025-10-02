@@ -1,136 +1,125 @@
 # 🌐 CIDR Subnet Calculator & VLSM Planner
 
-Profesjonalny kalkulator podsieci i planer VLSM dla administratorów sieci. Kalkuluj podsieci, dzielę sieci i planuj konfiguracje VLSM z łatwością.
+Professional subnet calculator and VLSM planner for network administrators. Calculate subnets, split networks, and plan VLSM configurations with ease.
 
-## ✨ Funkcje
+## ✨ Features
 
-### 🧮 Kalkulator CIDR
-- Oblicz szczegóły sieci z notacji CIDR (np. 192.168.1.0/24)
-- Wyświetl adres sieci, broadcast, zakres użytecznych IP
-- Reprezentacja binarna adresów sieci
-- Identyfikacja klasy IP
-- Obliczanie maski wildcard
+### 🧮 CIDR Calculator
+- Calculate network details from CIDR notation (e.g., 192.168.1.0/24)
+- Display network address, broadcast, usable IP range
+- Binary representation of network addresses
+- IP class identification
+- Wildcard mask calculation
 
-### ✂️ Dzielenie Sieci
-- Podziel sieci na równe podsieci
-- Automatyczne obliczanie CIDR na podstawie liczby podsieci
-- Widok tabelaryczny wszystkich szczegółów podsieci
-- Eksport wyników do CSV
+### ✂️ Subnet Splitter
+- Split networks into equal subnets
+- Automatic CIDR calculation based on number of subnets
+- Tabular view of all subnet details
+- Export results to CSV
 
-### 📊 Planer VLSM
-- Obsługa Variable Length Subnet Masking
-- Planuj sieci według wymagań hostów
-- Automatyczne optymalne przydzielanie podsieci
-- Sortowanie od największej do najmniejszej dla efektywności
+### 📊 VLSM Planner
+- Variable Length Subnet Masking support
+- Plan networks according to host requirements
+- Automatic optimal subnet assignment
+- Sorting from largest to smallest for efficiency
 
-### 🛠️ Narzędzia
-- Kopiuj informacje o podsieci do schowka
-- Eksport wyników do formatu CSV
-- Responsywny design dla urządzeń mobilnych i desktopowych
-- **Bez backendu** - działa całkowicie w przeglądarce
+### 🛠️ Tools
+- Copy subnet information to clipboard
+- Export results to CSV format
+- Responsive design for mobile and desktop devices
+- **No backend** - runs entirely in browser
 
-## 🛠️ Technologie
+## 🚀 Tech Stack
 
-- **Next.js 14** - Framework React z App Router
-- **TypeScript** - Rozwój typu-safe
-- **Tailwind CSS** - Nowoczesna stylizacja
-- **Lucide React** - Piękne ikony
-- **Client-side only** - Brak API, czyste obliczenia w przeglądarce
+- **Next.js 14** - React framework with App Router
+- **TypeScript** - Type-safe development
+- **Tailwind CSS** - Modern styling
+- **Lucide React** - Beautiful icons
+- **Client-side only** - No API, pure browser calculations
 
-## 🚀 Uruchomienie
+## 🖥️ Usage
 
-### Wymagania
-- Node.js 18+ zainstalowany
-- npm, yarn, lub pnpm package manager
+### 1. CIDR Calculator
+Enter a network in CIDR notation to see detailed information:
+- Input: `192.168.1.0/24`
+- Output: Network, broadcast, usable range, subnet mask, and more
 
-### Instalacja
+### 2. Subnet Splitter
+Divide a network into multiple equal subnets:
+- Input: Base network (`192.168.1.0/24`) + number of subnets (`4`)
+- Output: Table with all generated subnets
 
-1. Zainstaluj zależności:
+### 3. VLSM Planner
+Plan VLSM configuration for specific host requirements:
+- Input: Base network + host requirements for each subnet
+- Output: Optimally sized subnets sorted by size
+
+## 📋 Features in Detail
+
+| Feature | Description | Status |
+|---------|-------------|--------|
+| CIDR Calculator | Calculate network details from CIDR notation | ✅ |
+| Subnet Splitter | Equal subnet division | ✅ |
+| VLSM Planner | Variable length subnet masking | ✅ |
+| Binary Display | Show IP addresses in binary format | ✅ |
+| CSV Export | Export results for external use | ✅ |
+| Responsive UI | Mobile and desktop friendly | ✅ |
+| Copy to Clipboard | Quick copy functionality | ✅ |
+| IP Class Detection | Automatic IP class identification | ✅ |
+| Privacy First | No data leaves your browser | ✅ |
+
+## 🛠️ Development
+
 ```bash
+# Install dependencies
 npm install
-# lub
-yarn install
-# lub
-pnpm install
-```
 
-2. Uruchom serwer deweloperski:
-```bash
+# Run development server
 npm run dev
-# lub
-yarn dev
-# lub
-pnpm dev
-```
 
-3. Otwórz [http://localhost:3000](http://localhost:3000) w przeglądarce
-
-### Budowanie dla produkcji
-
-```bash
+# Build for production
 npm run build
-# lub
-yarn build
-# lub
-pnpm build
+
+# Start production server
+npm start
 ```
 
-## 🌐 Deployment na Vercel
-
-Aplikacja jest zoptymalizowana pod deployment na Vercel:
-
-1. Wypchnij kod na GitHub
-2. Zaimportuj repository w Vercel
-3. Deploy z domyślnymi ustawieniami
-4. Gotowe! Twój kalkulator podsieci jest live
-
-Alternatywnie, użyj Vercel CLI:
-```bash
-npm i -g vercel
-vercel
-```
-
-## 📝 Przykłady użycia
-
-### Kalkulator CIDR
-Input: `192.168.1.0/24`
-- Wyświetla szczegóły sieci, użyteczne IP, reprezentację binarną
-
-### Dzielenie Sieci
-Input: `10.0.0.0/16` z 4 podsieciami
-- Tworzy 4 równe podsieci /18
-
-### Planer VLSM
-Baza: `172.16.0.0.0/16`
-Wymagania:
-- Sieć 1: 1000 hostów
-- Sieć 2: 500 hostów
-- Sieć 3: 100 hostów
-
-Automatycznie oblicza optymalne rozmiary podsieci.
-
-## 🏗️ Struktura projektu
+## 📁 Project Structure
 
 ```
 subnets/
 ├── app/
-│   ├── layout.tsx       # Layout główny z metadanymi
-│   ├── page.tsx         # UI głównej aplikacji
-│   └── globals.css      # Style globalne
+│   ├── globals.css        # Global styles
+│   ├── layout.tsx         # Root layout with SEO
+│   ├── page.tsx           # Main application page
+│   ├── about/             # About page
+│   ├── terms/             # Terms of Service
+│   ├── privacy/           # Privacy Policy
+│   └── sitemap.ts         # XML sitemap
 ├── lib/
-│   └── subnet.ts        # Logika obliczeniowa podsieci
-├── package.json
-├── tsconfig.json
-├── tailwind.config.js
-├── postcss.config.js
-├── next.config.js
-├── vercel.json          # Konfiguracja deploymentu Vercel
-├── .eslintrc.json
-├── .gitignore
-└── README.md            # Kompletna dokumentacja
+│   └── subnet.ts          # Core subnet calculation logic
+├── public/
+│   ├── favicon.svg        # Website icon
+│   └── robots.txt         # SEO configuration
+├── package.json           # Dependencies and scripts
+├── tailwind.config.js     # Tailwind CSS configuration
+├── next.config.js         # Next.js configuration
+├── tsconfig.json          # TypeScript configuration
+├── .eslintrc.json         # ESLint rules
+├── .gitignore             # Git ignore rules
+└── README.md              # Complete documentation
 ```
 
-## 📄 Licencja
+### Key Algorithms
+
+The core calculation logic is in `lib/subnet.ts`:
+
+- **CIDR parsing**: Validates and parses CIDR notation
+- **Subnet calculation**: Computes network boundaries and details
+- **VLSM algorithm**: Optimizes subnet allocation for variable requirements
+- **Binary conversion**: Shows IP addresses in binary notation
+
+## 📄 License
 
 MIT License
 
@@ -154,7 +143,57 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-## 👨‍💻 Autor
+## 👨‍💻 Author
 
-Stworzone dla administratorów sieci przez administratorów sieci.
+Created for network administrators by network administrators.
 
+**Developer:** [blazejwrobel.eu](https://blazejwrobel.eu)
+
+## 🌟 Why This Project Exists
+
+This tool was created because existing subnet calculators often:
+- Lack proper VLSM functionality
+- Have complex interfaces
+- Store data on their servers
+- Are not mobile-friendly
+- Don't support CSV export
+
+Our solution provides:
+- ✅ Complete VLSM support
+- ✅ Intuitive interface
+- ✅ Privacy-first design (browser-only)
+- ✅ Mobile responsive
+- ✅ CSV export capabilities
+- ✅ Professional presentation
+
+Perfect for daily use by network administrators, system engineers, and anyone working with IP networking.
+
+## 🎯 Use Cases
+
+- **Network Design**: Plan IP addressing schemes
+- **Troubleshooting**: Verify subnet configurations
+- **Documentation**: Export subnet information for documentation
+- **Education**: Learn subnetting and VLSM concepts
+- **Quick Reference**: Fast subnet calculations during network operations
+
+## 📊 Performance
+
+- **Speed**: Instant calculations (client-side only)
+- **Privacy**: No data transmission to external servers
+- **Reliability**: Stable TypeScript-based calculations
+- **Accuracy**: Matches standard networking conventions
+- **Compatibility**: Works in all modern browsers
+
+## 🔒 Security & Privacy
+
+- **No Backend**: Everything runs in your browser
+- **No Data Collection**: We don't store any information
+- **Client-Side Only**: No external API calls
+- **Open Source**: Full code transparency with MIT license
+- **GDPR Compliant**: No personal data processing
+
+---
+
+**Ready to simplify your subnetting workflow?** 🚀
+
+This project is perfect for network administrators who need reliable, fast, and private subnet calculation tools.

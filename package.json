@@ -1,7 +1,25 @@
 {
   "name": "subnet-calculator",
   "version": "0.1.0",
+  "description": "Professional CIDR Subnet Calculator and VLSM Planner for network administrators",
   "private": true,
+  "author": "blazejwrobel.eu",
+  "homepage": "https://subnets.vercel.app",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/blazejwrobel98/subnets"
+  },
+  "keywords": [
+    "subnet-calculator",
+    "cidr",
+    "vlsm",
+    "network",
+    "networking",
+    "calculator",
+    "nextjs",
+    "typescript"
+  ],
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
