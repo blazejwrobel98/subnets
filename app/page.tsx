@@ -144,7 +144,14 @@ export default function Home() {
             <Network className="w-10 h-10 text-blue-600" />
             <h1 className="text-4xl font-bold text-slate-800">Subnet Calculator</h1>
           </div>
-          <p className="text-slate-600">Professional CIDR & VLSM Planning Tool for Network Administrators</p>
+          <p className="text-slate-600 text-lg">Professional CIDR & VLSM Planning Tool for Network Administrators</p>
+          <div className="mt-4 flex justify-center gap-4 text-sm text-slate-500">
+            <a href="/about" className="hover:text-blue-600 transition-colors">About</a>
+            <span>•</span>
+            <a href="/terms" className="hover:text-blue-600 transition-colors">Terms</a>
+            <span>•</span>
+            <a href="/privacy" className="hover:text-blue-600 transition-colors">Privacy</a>
+          </div>
         </div>
 
         {/* Mode Selector */}
@@ -494,6 +501,38 @@ export default function Home() {
             </div>
           </div>
         )}
+
+        {/* Footer */}
+        <footer className="mt-16 bg-white rounded-lg shadow-md p-6 border-t border-slate-200">
+          <div className="text-center space-y-4">
+            <div className="text-slate-600">
+              <h3 className="text-lg font-semibold mb-2">Subnet Calculator & VLSM Planner</h3>
+              <p className="text-sm max-w-2xl mx-auto">
+                Professional networking tool for administrators. Calculate CIDR subnets, split networks, 
+                and plan VLSM configurations with ease. No data leaves your browser - everything runs locally.
+              </p>
+            </div>
+            
+            <div className="border-t border-slate-200 pt-4">
+              <div className="flex flex-wrap justify-center gap-4 text-sm text-slate-500 mb-4">
+                <a href="/about" className="hover:text-blue-600 transition-colors">About</a>
+                <a href="/terms" className="hover:text-blue-600 transition-colors">Terms of Use</a>
+                <a href="/privacy" className="hover:text-blue-600 transition-colors">Privacy Policy</a>
+                <a href="https://github.com/blazejwrobel98/subnets" className="hover:text-blue-600 transition-colors">GitHub</a>
+              </div>
+              
+              <div className="text-xs text-slate-400 space-y-1">
+                <p>
+                  Powered by <a href="https://nextjs.org" className="text-slate-500 hover:text-blue-600">Next.js</a>
+                </p>
+                <p>
+                  Created by <a href="https://blazejwrobel.eu" className="text-slate-500 hover:text-blue-600">blazejwrobel.eu</a>
+                </p>
+                <p className="mt-2">© 2024 Subnet Calculator. All rights reserved.</p>
+              </div>
+            </div>
+          </div>
+        </footer>
       </div>
     </div>
   );

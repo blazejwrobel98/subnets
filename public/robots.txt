@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Priority pages
+Sitemap: https://subnets.vercel.app/sitemap.xml
+
+# Allow all bots
+Disallow: 
+
+# Optional: Block specific bot if needed
+# User-agent: BadBotHere
+# Disallow: /
