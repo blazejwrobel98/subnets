@@ -526,7 +526,7 @@ export default function Home() {
                 <p>
                   Created by <a href="https://blazejwrobel.eu" className="text-slate-500 hover:text-blue-600">blazejwrobel.eu</a>
                 </p>
-                <p className="mt-2">© 2024 Subnet Calculator. All rights reserved.</p>
+                <p className="mt-2">© 2025 Subnet Calculator. All rights reserved.</p>
               </div>
             </div>
           </div>

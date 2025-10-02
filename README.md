@@ -123,7 +123,7 @@ The core calculation logic is in `lib/subnet.ts`:
 
 MIT License
 
-Copyright (c) 2024 Subnet Calculator & VLSM Planner
+Copyright (c) 2025 Subnet Calculator & VLSM Planner
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

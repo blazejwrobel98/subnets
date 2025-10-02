@@ -161,7 +161,7 @@ export default function AboutPage() {
               Powered by <a href="https://nextjs.org" className="text-slate-500 hover:text-blue-600">Next.js</a>
               • Created by <a href="https://blazejwrobel.eu" className="text-slate-500 hover:text-blue-600">blazejwrobel.eu</a>
             </p>
-            <p>© 2024 Subnet Calculator. All rights reserved.</p>
+            <p>© 2025 Subnet Calculator. All rights reserved.</p>
           </div>
         </footer>
       </div>

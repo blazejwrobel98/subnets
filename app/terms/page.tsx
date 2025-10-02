@@ -16,7 +16,7 @@ export default function TermsPage() {
             <FileText className="w-8 h-8 text-blue-600" />
             <h1 className="text-3xl font-bold text-slate-800">Terms of Service</h1>
           </div>
-          <p className="text-slate-600 mb-4">Last updated: October 2024</p>
+          <p className="text-slate-600 mb-4">Last updated: January 2025</p>
           <Link href="/" className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 transition-colors">
             ← Back to Calculator
           </Link>
@@ -133,7 +133,7 @@ export default function TermsPage() {
               Powered by <a href="https://nextjs.org" className="text-slate-500 hover:text-blue-600">Next.js</a>
               • Created by <a href="https://blazejwrobel.eu" className="text-slate-500 hover:text-blue-600">blazejwrobel.eu</a>
             </p>
-            <p>© 2024 Subnet Calculator. All rights reserved.</p>
+            <p>© 2025 Subnet Calculator. All rights reserved.</p>
           </div>
         </footer>
       </div>
