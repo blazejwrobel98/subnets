@@ -16,7 +16,7 @@ export default function PrivacyPage() {
             <Shield className="w-8 h-8 text-blue-600" />
             <h1 className="text-3xl font-bold text-slate-800">Privacy Policy</h1>
           </div>
-          <p className="text-slate-600 mb-4">Last updated: January 2025</p>
+          <p className="text-slate-600 mb-4">Last updated: October 2025</p>
           <Link href="/" className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 transition-colors">
             ← Back to Calculator
           </Link>
