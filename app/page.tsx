@@ -136,8 +136,9 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 py-8 px-4">
-      <div className="max-w-7xl mx-auto">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 flex flex-col">
+      <div className="flex-1 py-8 px-4">
+        <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-8">
           <div className="flex items-center justify-center gap-3 mb-3">
@@ -145,13 +146,6 @@ export default function Home() {
             <h1 className="text-4xl font-bold text-slate-800">Subnet Calculator</h1>
           </div>
           <p className="text-slate-600 text-lg">Professional CIDR & VLSM Planning Tool for Network Administrators</p>
-          <div className="mt-4 flex justify-center gap-4 text-sm text-slate-500">
-            <a href="/about" className="hover:text-blue-600 transition-colors">About</a>
-            <span>•</span>
-            <a href="/terms" className="hover:text-blue-600 transition-colors">Terms</a>
-            <span>•</span>
-            <a href="/privacy" className="hover:text-blue-600 transition-colors">Privacy</a>
-          </div>
         </div>
 
         {/* Mode Selector */}
@@ -502,8 +496,12 @@ export default function Home() {
           </div>
         )}
 
-        {/* Footer */}
-        <footer className="mt-16 bg-white rounded-lg shadow-md p-6 border-t border-slate-200">
+        </div>
+      </div>
+
+      {/* Footer */}
+      <footer className="bg-white border-t border-slate-200 py-6 px-4">
+        <div className="max-w-7xl mx-auto">
           <div className="text-center space-y-4">
             <div className="text-slate-600">
               <h3 className="text-lg font-semibold mb-2">Subnet Calculator & VLSM Planner</h3>
@@ -532,8 +530,8 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </footer>
-      </div>
+        </div>
+      </footer>
     </div>
   );
 }

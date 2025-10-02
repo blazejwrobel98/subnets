@@ -184,7 +184,6 @@ export function calculateVLSM(baseIp: string, baseCidr: number, requirements: { 
       const availableHosts = i === 32 ? 1 : (i === 31 ? 2 : Math.pow(2, 32 - i) - 2);
       if (availableHosts >= requiredHosts) {
         cidr = i;
-      } else {
         break;
       }
     }
