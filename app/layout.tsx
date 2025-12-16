@@ -109,6 +109,11 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <link rel="apple-touch-icon" href="/favicon.svg" />
         <script
+          src="https://analytics.blazejwrobel.eu/analytics.js"
+          data-api-url="https://analytics.blazejwrobel.eu/api/track"
+          async
+        />
+        <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
